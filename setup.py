@@ -1,6 +1,4 @@
-from setuptools import find_packages, setup
-
-import versioneer
+from setuptools import setup
 
 DISTNAME = "cog_data"
 LICENSE = "MIT"
