@@ -23,5 +23,5 @@ def get_sha256_hash(file_path: Union[Path, str]) -> str:
 
 
 def get_md5_hash(file_path: Union[Path, str]) -> str:
-    """Reads in data from disk and returns md5 hash"""
+    """Reads in data from disk and returns sha256 hash"""
     return _get_hash(file_path, hashlib.md5())
