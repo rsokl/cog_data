@@ -1,6 +1,6 @@
 import hashlib
 from pathlib import Path
-from typing import TYPE_CHECKING, Any, Union
+from typing import TYPE_CHECKING, Any, Union, Final
 import pooch
 
 if TYPE_CHECKING:
@@ -42,7 +42,7 @@ def get_md5_hash(file_path: Union[Path, str]) -> str:
     """
     return _get_hash(file_path, hashlib.md5())
 
-audio_files = {'BP_ET_minor.ogg': 'sha256:2bcb618d44bb46694f729b7c23eeb8e2925b34be3aef63c2ddd823cee892e796',
+audio_files: Final = {'BP_ET_minor.ogg': 'sha256:2bcb618d44bb46694f729b7c23eeb8e2925b34be3aef63c2ddd823cee892e796',
  'dow.txt': 'sha256:94bdebcf3b524134a34bbfadea392e36704d2116e2b309e54f79be77539e507e',
  'paws.txt': 'sha256:e4e3391ddcc6418b599cf8603030c7b0f3fd9c0c0329096d450562cd7ac10825',
  'piano.txt': 'sha256:c593cf60873be66ac2c0fa8a619d33c4445b69a41c7f50ef7589ae44000cd2b3',
@@ -50,9 +50,9 @@ audio_files = {'BP_ET_minor.ogg': 'sha256:2bcb618d44bb46694f729b7c23eeb8e2925b34
  'trumpet.txt': 'sha256:82bc7c1b125c6465c28ee84cb3eebe8331ede85c863c20f2839af605513d8689',
  'trumpet.wav': 'sha256:618be790b3d6c0600f701a6edd29c359ec244ad8fc3cd6dae4138b20a118217c'}
 
-vision_files = {'nba_draft_measurements.nc': 'sha256:1cbb075e5b8a8d908d3eb70d9d28cab92c112079c0d9b7ccc7e2629b8d1484a8'}
+vision_files: Final = {'nba_draft_measurements.nc': 'sha256:1cbb075e5b8a8d908d3eb70d9d28cab92c112079c0d9b7ccc7e2629b8d1484a8'}
 
-language_files = {'glove.6B.100d.txt.w2v.zip': 'sha256:b340ad2b7c08c6e12529cbc7370e71ceffd668e979895c97ffb03ce79736c5b4',
+language_files: Final = {'glove.6B.100d.txt.w2v.zip': 'sha256:b340ad2b7c08c6e12529cbc7370e71ceffd668e979895c97ffb03ce79736c5b4',
  'glove.6B.200d.txt.w2v.zip': 'sha256:6cbe88628045658c4175c50121b9ad6c61c39777ee42bdb19a255d26b0472b3a',
  'glove.6B.300d.txt.w2v.zip': 'sha256:47efbb5004f34b6b6241deee0cf26b913fdef68497e9100480edbcfb3b3ae034',
  'glove.6B.50d.txt.w2v': 'sha256:9a8a78e2c6da3115e97044cbcfb40736d430961410bf732a4e80776412be5cd3',
