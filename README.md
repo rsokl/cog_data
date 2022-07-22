@@ -1,4 +1,4 @@
-# cog_data
+# cogworks_data
 Hosts data for cogworks
 
 
