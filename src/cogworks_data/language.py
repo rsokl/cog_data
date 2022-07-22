@@ -16,6 +16,8 @@ def get_data_path(
         "stopwords.txt",
         "wikipedia2text-encoded.npz",
         "wikipedia2text-extracted.txt",
+        "captions_train2014.json,"
+        "resnet18_features.pkl",
     ]
 ) -> str:
     """Specify the name of a file in the a data-storage repository. This file
@@ -44,5 +46,8 @@ def get_data_path(
     - stopwords.txt : MySQL stop-words
     - wikipedia2text-encoded.npz
     - wikipedia2text-extracted.txt " : Text-only version of wikipedia http://www.evanjones.ca/software/wikipedia2text.html
+    - captions_train2014.json : Images and associated captions from the MSCOCO 2014 dataset
+    - resnet18_features.pkl : A shape- (1,512)  descriptor vector for each image from the MSCOCO dataset. Each of these was produced by processing each image with a pre-trained ResNet-18 classification model.
+
     """
     return _utils.language_data.fetch(file_name)

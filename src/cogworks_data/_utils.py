@@ -62,7 +62,9 @@ language_files: Final = {'glove.6B.100d.txt.w2v.zip': 'sha256:b340ad2b7c08c6e125
  'shakespeare_input.txt': 'sha256:90a59332a07bdea17e1b13088050e5a7e81e18db994e18b057b89fd50d2f49c4',
  'stopwords.txt': 'sha256:9aa3e6f003d6c0e07a2d6e049e43a5669d554622dbd38fef91b37d4a852e15a5',
  'wikipedia2text-encoded.npz': 'sha256:32fe610a6571cf79c2d38e0f0268e1cc4b9983fd53d8f3c57986f5303518280a',
- 'wikipedia2text-extracted.txt': 'sha256:ed58b8b9b3e4d8607353016c55c973c4bbfde89f2b39d5fc673ac55003072eea'}
+ 'wikipedia2text-extracted.txt': 'sha256:ed58b8b9b3e4d8607353016c55c973c4bbfde89f2b39d5fc673ac55003072eea',
+ 'captions_train2014.json': 'dd8c9636dc11740f956e36728866ea0c4ebe4988dcbdc5e712b7c2267f152d12',
+ 'resnet18_features.pkl': 'd56e267dacd39608b4aae581595f8fa8ec55457ab59b713df1eafa93e1023450',}
 
 audio_data = pooch.create(
     base_url= "https://github.com/rsokl/cog_data/releases/download/audio-files/",
